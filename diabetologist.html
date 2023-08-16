@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><center>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <title>Diabetologist Department - Cured Hospital</title>
+</head>
+<body>
+  <header>
+    <h1>Diabetologist Department</h1>
+  </header>
+
+  <main>
+    <div class="department-details">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.ZJUiMNrpujPN3ZqRwO5YjQHaE7&pid=Api&P=0&h=220" alt="Diabetologist Department">
+      <p>Welcome to our Diabetologist Department...</p>
+      <p>Our specialized diabetologists...</p>
+      <p>If you are managing diabetes...</p>
+      <a href="#" class="read-more" onclick="showAppointmentForm('diabetologist')">Schedule Appointment</a>
+    </div>
+
+    <div id="appointment-form-diabetologist" style="display: none;">
+      <h2>Schedule Appointment</h2>
+      <form id="diabetologist-form">
+        <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Email: info@curedhospital.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Address: 123 Main St, City</p>
+  </footer>
+
+  <script>
+    function showAppointmentForm(department) {
+      const form = document.getElementById(`appointment-form-${department}`);
+      form.style.display = 'block';
+    }
+  </script>
+</body></center>
+</html>

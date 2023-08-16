@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <title>Cured Hospital</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    #carousel-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2em 0;
+    }
+
+    #carousel {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-slide img {
+      width: 100%;
+    }
+
+    #sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+    }
+
+    .section-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1em;
+      padding: 1.5em;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .section-card img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+
+    .read-more {
+      display: block;
+      margin-top: 1em;
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cured Hospital</h1>
+  </header>
+  
+  <div id="carousel-container">
+    <div id="carousel">
+      <div class="carousel-slide">
+        <img src="https://i0.wp.com/www.orthospinenews.com/wp-content/uploads/2019/04/Hospital-building-12bto234rui.jpg?fit=790%2C559&ssl=1" alt="Hospital Image 1">
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <section id="sections">
+    <div class="section-card">
+      <img src="https://tse4.explicit.bing.net/th?id=OIP.doOfWpdzTuTWD-2G9w8yDgHaE8&pid=Api&P=0&h=220" alt="Cardiology">
+      <h2>Cardiology</h2>
+      <p>Our experienced cardiologists...</p>
+      <a href="cardiology.html" class="read-more">Read More</a>
+    </div>
+  
+    <div class="section-card">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.ZJUiMNrpujPN3ZqRwO5YjQHaE7&pid=Api&P=0&h=220" alt="Diabetologist">
+      <h2>Diabetologist</h2>
+      <p>Our specialized diabetologists...</p>
+      <a href="diabetologist.html" class="read-more">Read More</a>
+    </div>
+  
+    <div class="section-card">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.fgOssEwD0IEimiUKhGAUmgHaEn&pid=Api&P=0&h=220" alt="ENT">
+      <h2>ENT (Ear, Nose, Throat)</h2>
+      <p>Our ENT specialists provide...</p>
+      <a href="ent.html" class="read-more">Read More</a>
+    </div>
+
+  
+    
+  </section>
+  
+
+  <footer>
+    <p>Email: info@curedhospital.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Address: 123 Main St, City</p>
+  </footer>
+  
+  
+</body>
+</html>
